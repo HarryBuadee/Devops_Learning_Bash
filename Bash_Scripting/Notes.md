@@ -19,4 +19,10 @@ chmod +x script.sh   # Enable execution permissions
 # comment
 ````
 - Comments are used to explain what the code does and to facilitate collaboration.
-## 4)
+## 4) Variables
+
+````
+greeting="Hello family!"
+echo $greeting
+````
+- Variables are strings numbers or filename. It allows your script to store data, reuse it throughout the script, and modify it as needed, making your code more flexible and efficient.

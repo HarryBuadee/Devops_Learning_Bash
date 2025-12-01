@@ -26,3 +26,23 @@ greeting="Hello family!"
 echo $greeting
 ````
 - Variables are strings numbers or filename. It allows your script to store data, reuse it throughout the script, and modify it as needed, making your code more flexible and efficient.
+
+  ## 5)
+
+  eq = equals
+  ne = not equal to
+  lt = less than
+  gt = greater than
+  le = less than or equal to -to
+  ge = greater than or equal to
+
+6) If statments
+
+7) #!/bin/bash
+
+age=77
+if [ $age -gt 18 ]
+then 
+ echo "You are an adult!" # code block to be executed
+fi
+  

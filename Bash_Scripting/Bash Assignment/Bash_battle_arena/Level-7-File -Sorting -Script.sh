@@ -9,9 +9,7 @@ txt_files=(*.txt)
 if [ ${#txt_files[@]} -eq 0 ]; then
     echo "No .txt files found in this directory."
     exit 1
-  else
-  files=("file1.txt" "file2.txt")
-  du -b "${files[@]}"
-
-
+else
+    du -b "${txt_files[@]}" | sort -n
 fi
+

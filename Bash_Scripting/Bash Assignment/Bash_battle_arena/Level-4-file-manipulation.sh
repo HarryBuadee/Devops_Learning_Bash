@@ -1,12 +1,6 @@
-Level 4: File Manipulation
-
-Mission: Create a script that copies all .txt files from the Arena directory to a new directory called Backup.
-
-
-scripty
-
-````
 #!/bin/bash
+
+#Mission: Create a script that copies all .txt files from the Arena directory to a new directory called Backup.
 
 mkdir -p Backup
 
@@ -17,6 +11,3 @@ if ls *.txt 1> /dev/null 2>&1; then
 else
     echo "No text documents found."
 fi
-
-
-`````

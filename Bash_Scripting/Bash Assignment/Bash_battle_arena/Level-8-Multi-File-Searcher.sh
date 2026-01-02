@@ -4,7 +4,7 @@
 SEARCH_TERM="$1"
 
 if [ -z "$SEARCH_TERM" ]; then
-    echo "Usage: $0 <search_term>"
+    echo "No input"
     exit 1
 fi
 

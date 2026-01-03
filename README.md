@@ -16,8 +16,8 @@ bash
 Used to explain code; ignored by Bash.
 ````
 3. Variables
-```
-bash
+
+```bash
 Copy code
 name="Alice"
 echo "Hello, $name"
@@ -151,7 +151,7 @@ fi
 `````
 Test multiple conditions inside each other.
 
-17. set Commands
+17. Set Commands
 ````bash
 Copy code
 set -euo pipefail

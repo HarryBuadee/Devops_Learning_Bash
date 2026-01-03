@@ -1,13 +1,14 @@
-# Bash Scripting Cheatsheet
+## Bash Scripting Cheatsheet
 
 A concise reference for Bash scripting basics, suitable for beginners and intermediate users.
 
 
-## 1. Shebang
+# 1. Shebang
 ```
 #!/bin/bash
+````
 Specifies which shell executes the script.
-```
+
 2. Comments
 bash
 ```
@@ -46,8 +47,9 @@ Copy code
 a=5
 b=3
 echo $((a + b))
-Perform integer math directly in Bash.
 ````
+Perform integer math directly in Bash.
+
 7. For Loop
 ```bash
 Copy code
@@ -139,44 +141,48 @@ done
 Exit a loop immediately.
 
 16. Nested If
-bash
+````bash
 Copy code
 if [ $x -gt 0 ]; then
   if [ $x -lt 10 ]; then
     echo "x is between 1 and 9"
   fi
 fi
+`````
 Test multiple conditions inside each other.
 
 17. set Commands
-bash
+````bash
 Copy code
 set -euo pipefail
 # -e: exit on error
 # -u: treat unset variables as error
 # -o pipefail: fail if any command in a pipeline fails
+````
 Make scripts more robust and safer.
 
 18. Exit Codes
-bash
+```bash
 Copy code
 if [ -f file.txt ]; then
   exit 0
 else
   exit 1
 fi
+```
 Communicate success (0) or failure (non-zero).
 
 19. Error Handling
-bash
+````bash
 Copy code
 set -e
 mkdir /restricted_area   # script stops if this fails
 echo "This will not run if the above fails"
+````
 Stop script execution on errors.
 
 20. Common Test Conditions
-bash
+````bash
 Copy code
 # File/Directory tests
 [ -f file.txt ] && echo "File exists"
@@ -189,3 +195,52 @@ Copy code
 # Integer tests
 [ $x -gt 10 ] && echo "x > 10"
 [ $x -le 5 ] && echo "x <= 5"
+``````
+
+
+## Bash Test Operators
+
+**Use Case:**  
+Checking files, comparing strings, or evaluating numbers in conditions.
+
+**Purpose:**  
+Test operators are fundamental for creating conditional logic in Bash.
+
+---
+
+### 📁 File Test Operators
+
+| Operator | Description |
+|--------|------------|
+| `-f file` | File exists and is a regular file |
+| `-d dir` | Directory exists |
+| `-r file` | File has read permission |
+| `-w file` | File has write permission |
+| `-x file` | File has execute permission |
+| `-e file` | File or directory exists |
+
+---
+
+### 🔤 String Test Operators
+
+| Operator | Description |
+|--------|------------|
+| `string1 = string2` | Strings are identical |
+| `string1 != string2` | Strings are different |
+| `-z string` | String is empty (zero length) |
+| `-n string` | String is not empty |
+
+---
+
+### 🔢 Integer Test Operators
+
+| Operator | Description |
+|--------|------------|
+| `int1 -eq int2` | Integers are equal |
+| `int1 -ne int2` | Integers are not equal |
+| `int1 -gt int2` | `int1` is greater than `int2` |
+| `int1 -lt int2` | `int1` is less than `int2` |
+| `int1 -ge int2` | `int1` is greater than or equal to `int2` |
+| `int1 -le int2` | `int1` is less than or equal to `int2` |
+
+---

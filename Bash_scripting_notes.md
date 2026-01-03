@@ -1,4 +1,4 @@
-## Bash Scripting Cheatsheet
+## Bash Scripting Notes
 
 A concise reference for Bash scripting basics, suitable for beginners and intermediate users.
 

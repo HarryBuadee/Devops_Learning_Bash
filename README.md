@@ -4,73 +4,81 @@ A concise reference for Bash scripting basics, suitable for beginners and interm
 
 
 ## 1. Shebang
-```bash
+```
 #!/bin/bash
 Specifies which shell executes the script.
-----
+```
 2. Comments
 bash
-
+```
 # This is a comment
 Used to explain code; ignored by Bash.
-
+````
 3. Variables
+```
 bash
 Copy code
 name="Alice"
 echo "Hello, $name"
 Store values for reuse.
-
+````
 4. Make & Run Scripts
+```
 bash
 Copy code
 chmod +x script.sh
 ./script.sh
+```
 Give execute permission and run scripts.
 
 5. User Input
-bash
+
+```bash
 Copy code
 read -p "Enter name: " username
 echo "Hello, $username"
+```
 Get input from the user interactively.
 
 6. Arithmetic
-bash
+```bash
 Copy code
 a=5
 b=3
 echo $((a + b))
 Perform integer math directly in Bash.
-
+````
 7. For Loop
-bash
+```bash
 Copy code
 for i in 1 2 3; do
   echo $i
 done
+`````
 Repeat commands for each item in a list.
 
 8. While Loop
-bash
+```bash
 Copy code
 count=1
 while [ $count -le 5 ]; do
   echo $count
   ((count++))
 done
+````
 Repeat commands while a condition is true.
 
 9. If Statement
-bash
+```bash
 Copy code
 if [ $x -gt 10 ]; then
   echo "x > 10"
 fi
+```
 Execute code based on a condition.
 
 10. If…Elif…Else
-bash
+````bash
 Copy code
 if [ $x -lt 0 ]; then
   echo "Negative"
@@ -79,49 +87,55 @@ elif [ $x -eq 0 ]; then
 else
   echo "Positive"
 fi
+````
 Choose between multiple conditions.
 
 11. Case Statement
-bash
+```bash
 Copy code
 case $num in
   1) echo "One";;
   2) echo "Two";;
   *) echo "Other";;
 esac
+```
 Compare a value against multiple options.
 
 12. Functions
-bash
+```bash
 Copy code
 greet() { echo "Hello, $1"; }
 greet "Alice"
+````
 Reusable blocks of code.
 
 13. Arrays
-bash
+````bash
 Copy code
 fruits=("apple" "banana" "cherry")
 echo "${fruits[0]}"   # apple
 echo "${fruits[@]}"   # all elements
+````
 Store and manage multiple related values.
 
 14. Continue
-bash
+```bash
 Copy code
 for i in {1..5}; do
   [ $i -eq 3 ] && continue
   echo $i
 done
+```
 Skip the current iteration but continue the loop.
 
 15. Break
-bash
+```bash
 Copy code
 for i in {1..5}; do
   [ $i -eq 3 ] && break
   echo $i
 done
+```
 Exit a loop immediately.
 
 16. Nested If

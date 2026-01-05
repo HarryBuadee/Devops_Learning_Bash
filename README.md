@@ -1,68 +1,109 @@
-# 🐧 Bash Scripting Portfolio
+# 🛠️ Bash Scripting Portfolio
 
-## 📌 Overview
-
-This repository showcases my **Bash scripting skills**, developed through **Level 1–15 structured exercises** and additional real-world scripting challenges. It demonstrates my progression from Bash fundamentals to practical automation and system-style tasks.
-
----
-
-## 🧱 What I’ve Covered
-
-### Bash Fundamentals
-
-* Linux navigation and core commands
-* Script creation, execution, and permissions
-* Variables and user input
-
-### Logic & Control Flow
-
-* Conditional statements (`if`, `elif`, `else`)
-* File and string test operators
-* Input validation and error handling
-
-### Automation & Efficiency
-
-* Loops (`for`, `while`)
-* Argument parsing (`$1`, `$@`, `$#`)
-* Functions and reusable logic
-* Arrays for handling multiple values
-
-### File & Text Processing
-
-* File and directory manipulation
-* Searching files and logs with `grep`
-* Sorting and filtering results
-* Combining commands with pipes
+Welcome to my **Bash Scripting Portfolio** 👋
+This repository documents my Bash scripting journey as part of my broader **Linux, automation, and DevOps upskilling path**.
 
 ---
 
-## 🧪 Practical Bash Exercises
+## 📚 Overview
 
-* Log file search scripts
-* Phrase matching across directories
-* File size sorting utilities
-* Arithmetic scripts with validation
-* Linux navigation and scripting comparisons
+This repository contains **structured Bash scripting exercises** ranging from beginner to more advanced levels. The work focuses on building **practical command-line automation skills** commonly used in IT support, Linux administration, and DevOps-style environments.
 
----
+The learning approach includes:
 
-## 🧠 Skills Demonstrated
-
-* Bash scripting best practices
-* Linux filesystem knowledge
-* Automation of repetitive tasks
-* Writing safe, readable scripts
-* Troubleshooting and debugging
+* ✅ Hands-on Bash scripting exercises
+* ✅ Progressive challenge-based scripts (Levels 1–15)
+* ✅ Real-world inspired tasks (file handling, log parsing, validation)
+* ✅ Clear focus on readability and safe scripting practices
 
 ---
 
-## 🚀 Why This Repo
+## 🗂️ Project Structure
 
-These scripts reflect **real-world Linux and IT support scenarios**, supporting my experience in:
+```text
+Devops_Learning_Bash/
+├── Bash_Scripting/
+│   ├── Bash-battle-arena/               # Progressive challenges (Level 1–15)
+│   │   ├── Level_1_the_basics.sh
+│   │   ├── Level_2_variables_input.sh
+│   │   ├── Level_3_conditional_logic.sh
+│   │   ├── Level_4_file_manipulation.sh
+│   │   ├── Level_5_combining_basics.sh
+│   │   ├── Level_6_argument_parsing.sh
+│   │   ├── Level_7_loops.sh
+│   │   ├── Level_8_string_handling.sh
+│   │   ├── Level_9_directory_monitoring.sh
+│   │   ├── Level_10_functions.sh
+│   │   ├── Level_11_arrays.sh
+│   │   ├── Level_12_file_search_sort.sh
+│   │   ├── Level_13_backup_script.sh
+│   │   ├── Level_14_error_handling.sh
+│   │   └── Level_15_advanced_bash_challenge.sh
+│   │
+│   ├── Bash-scripting-task/             # Standalone practice scripts
+│   │   ├── Backup_script_for_text_files.sh
+│   │   ├── Basic_Arithmetic_Calculator.sh
+│   │   ├── Conditional_Statments.sh
+│   │   └── File_Operations_Script.sh
+│   │
+│   └── Notes/
+│       └── bash_scripting_notes.md
+└── README.md
 
-* System administration
-* Automation
-* Linux-based troubleshooting
+---
+
+## 🏆 Bash Battle Arena (Levels 1–15)
+Each script in the **Bash Battle Arena** represents a progressive challenge designed to build upon previous concepts.
+
+Highlights include:
+
+- **Level 1 – The Basics**  
+  Variables, `echo`, user input, and script execution
+
+- **Level 5 – Combining Basics**  
+  Mixing loops, conditionals, file checks, and input handling
+
+- **Level 9 – Directory Monitoring**  
+  Detecting changes in directories using Bash logic
+
+- **Level 13 – Backup Script**  
+  Creating backups with validation and basic rotation logic
+
+- **Level 15 – Advanced Bash Challenge**  
+  Capstone-style script combining arguments, functions, loops, and error handling
+
+---
+
+## 🧪 Additional Bash Exercises
+Alongside the structured levels, this repository also includes standalone scripts focused on specific skills:
+
+- Log file searching across directories
+- Phrase matching using `grep`
+- Sorting files by size
+- Arithmetic scripts with input validation
+- Linux navigation and scripting comparisons
+
+---
+
+## 🧠 What I’ve Learned
+Through these exercises, I’ve developed confidence in:
+
+- Bash scripting fundamentals
+- Linux filesystem navigation
+- Conditional logic and loops
+- Argument parsing and input validation
+- Writing readable, maintainable scripts
+- Automating repetitive administrative tasks
+
+---
+
+## 🚀 Why Bash?
+Bash is foundational to **Linux and Unix-based systems**. Learning Bash has helped me:
+
+- Automate everyday system tasks
+- Improve troubleshooting speed in Linux environments
+- Build a strong scripting foundation before moving to higher-level tools
+- Better understand how DevOps automation works under the hood
 
 ---
 
@@ -71,59 +112,8 @@ These scripts reflect **real-world Linux and IT support scenarios**, supporting 
 ```bash
 chmod +x script.sh
 ./script.sh
-```
+````
 
 ---
 
-📈 *This repository represents my hands-on progression in Bash scripting and Linux automation.*
-
----
-
-## 🗣️ Interview Talking Points
-
-### What is this repository about?
-
-This repository documents my progression in **Bash scripting**, from core Linux fundamentals to practical automation-style scripts. It shows structured learning and real-world problem solving rather than isolated examples.
-
-### What skills does this demonstrate?
-
-* Bash fundamentals and Linux navigation
-* Conditional logic and control flow
-* Loops and argument parsing
-* File and directory manipulation
-* Text processing with standard Unix tools
-* Input validation and error handling
-
-### Why did you structure it in levels?
-
-The levels allowed me to build skills incrementally, with each stage building on the last. This mirrors real-world scripting, where simple scripts evolve into more complex automation.
-
-### How is this relevant to real-world IT or Linux roles?
-
-Many scripts reflect real IT scenarios such as checking file existence, searching log files, validating user input, and automating repetitive tasks. These are common tasks in Linux support, system administration, and automation roles.
-
-### Example of a practical script
-
-A log-search script that scans multiple `.log` files for a specific phrase and outputs only the matching filenames. This is useful for troubleshooting services or application errors on Linux systems.
-
-### How do you handle errors in your scripts?
-
-I validate inputs early, check file and directory states before acting, and use clear error messages with exit codes. This helps prevent unintended behaviour and makes scripts safer to run.
-
-### What Bash features are you confident with?
-
-* `if / elif / else` conditionals
-* `for` and `while` loops
-* Positional arguments (`$1`, `$@`, `$#`)
-* Functions and arrays
-* Core utilities such as `grep`, `find`, `sort`, and pipes
-
-### What did you find most challenging?
-
-Input validation and argument handling, especially dealing with edge cases. Working through this significantly improved my scripting discipline.
-
-### What would you add next?
-
-More advanced automation such as cron jobs, system monitoring scripts, and deeper text processing using tools like `awk` and `sed`.
-
-> **Summary:** This portfolio demonstrates my ability to write safe, readable Bash scripts that solve real-world Linux and IT problems.
+📈 *This repository represents my hands-on progression in Bash scripting, automation, and Linux fundamentals.*
